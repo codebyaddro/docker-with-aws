@@ -3,7 +3,7 @@
 
 FROM node:20-alpine as frontend-builder
 
-COPY ./Frontend /app
+COPY ./frontend /app
 
 WORKDIR /app
 
@@ -14,7 +14,7 @@ RUN npm run build
 # Build the Backend
 FROM node:20-alpine
 
-COPY ./Backend /app
+COPY ./backend /app
 
 WORKDIR /app
 
